@@ -1,45 +1,56 @@
 {
-	"name": "@joshdb/indexeddb",
-	"version": "2.0.0",
-	"author": "@joshdb",
-	"license": "Apache-2.0",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"exports": {
-		"import": "./dist/index.mjs",
-		"require": "./dist/index.js"
-	},
-	"scripts": {
-		"test": "jest --verbose",
-		"lint": "eslint src tests --ext ts --fix -c ../../.eslintrc",
-		"build": "rollup -c rollup.bundle.ts",
-		"prepublishOnly": "rollup-type-bundler"
-	},
-	"dependencies": {
-		"@joshdb/core": "RealShadowNova/joshdb-core#build",
-		"@realware/utilities": "^2.0.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/eslachance/josh-providers"
-	},
-	"files": [
-		"dist",
-		"!dist/*tsbuildinfo"
-	],
-	"engines": {
-		"node": ">=16",
-		"npm": ">=6"
-	},
-	"keywords": [],
-	"bugs": {
-		"url": "https://github.com/eslachance/josh-providers/issues"
-	},
-	"homepage": "https://github.com/eslachance/josh-providers",
-	"publishConfig": {
-		"access": "public"
-	},
-	"devDependencies": {
-		"fake-indexeddb": "^3.1.7"
-	}
+  "name": "@joshdb/indexeddb",
+  "version": "2.0.0",
+  "author": "Évelyne Lachance <eslachance@gmail.com> (https://evie.codes/)",
+  "contributors": [
+    "WilsontheWolf (https://wilson.antti.codes/)",
+    "DanCodes <dan@dancodes.online> (https://dancodes.online/)"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest",
+    "docs": "typedoc-json-parser",
+    "lint": "eslint src tests --ext ts --fix -c ../../.eslintrc",
+    "build": "rollup -c rollup.config.ts",
+    "prepack": "rollup-type-bundler",
+    "bump": "cliff-jumper",
+    "check-update": "cliff-jumper --dry-run"
+  },
+  "dependencies": {
+    "@joshdb/core": "next",
+    "@realware/utilities": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslachance/josh-providers"
+  },
+  "files": [
+    "dist",
+    "!dist/*tsbuildinfo"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=6"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/josh-development/providers/issues"
+  },
+  "homepage": "https://josh.evie.dev",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^3.1.7",
+    "jest": "^28.1.3"
+  }
 }

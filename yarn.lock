@@ -974,6 +974,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@joshdb/core@npm:next":
+  version: 3.0.0-next.05c30c7.0
+  resolution: "@joshdb/core@npm:3.0.0-next.05c30c7.0"
+  dependencies:
+    "@joshdb/auto-ensure": 1.1.0-next.e9d0c3d.0
+    "@joshdb/map": 1.1.0-next.d8e99a9.0
+    "@joshdb/middleware": 1.1.0-next.ffebf9f.0
+    "@sapphire/utilities": ^3.7.0
+  checksum: eb9d62fd51a9513795db103afb4527887e94834e54f42f10432bab804e5d9ece7f04f48e14c0647c27e8fb913a407b8bf79b41dce0080ccdca3944c3e01de2d5
+  languageName: node
+  linkType: hard
+
+"@joshdb/indexeddb@workspace:packages/indexeddb":
+  version: 0.0.0-use.local
+  resolution: "@joshdb/indexeddb@workspace:packages/indexeddb"
+  dependencies:
+    "@joshdb/core": next
+    "@realware/utilities": ^2.0.2
+    fake-indexeddb: ^3.1.7
+    jest: ^28.1.3
+  languageName: unknown
+  linkType: soft
+
 "@joshdb/json@workspace:packages/json":
   version: 0.0.0-use.local
   resolution: "@joshdb/json@workspace:packages/json"
@@ -1223,6 +1246,13 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 1388777b507b0c592d53f41b9d182e1a8de7763bc625fc07999b8edbc22325f074e5b3ec90af79c89d6987fdb2325bc66d59f483258543c14a43661621f841b0
+  languageName: node
+  linkType: hard
+
+"@realware/utilities@npm:^2.0.2":
+  version: 2.1.1
+  resolution: "@realware/utilities@npm:2.1.1"
+  checksum: 1e6913c5956837b14bd4c9367db5d64fc895f8e75e11b7b67999b43b0a89dddd4ac59b2f63583a7a8c0208540d96958374e7627b1a7e7c33e53dba333e98615c
   languageName: node
   linkType: hard
 
@@ -2061,6 +2091,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base64-arraybuffer-es6@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "base64-arraybuffer-es6@npm:0.7.0"
+  checksum: 6d2fd114df49201b476cea5d470504e5d4e8c4cd42544152b312c9bdcb824313086fe83f1ffc34262e9e276b82d46aefc6e63bb85553f016932061137b355cdf
+  languageName: node
+  linkType: hard
+
 "base64-js@npm:^1.3.1":
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
@@ -2565,6 +2602,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.4":
+  version: 3.24.1
+  resolution: "core-js@npm:3.24.1"
+  checksum: 6fb5bf0fd9e9f3e69d95616dd03332fea6758a715d2628c108b5faf17b48b0f580e90c4febb0a523c4665b0991a810de16289f86187fe79d70cc722dbd3edf0e
+  languageName: node
+  linkType: hard
+
 "cosmiconfig-typescript-loader@npm:^2.0.0":
   version: 2.0.2
   resolution: "cosmiconfig-typescript-loader@npm:2.0.2"
@@ -2747,6 +2791,15 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: fd7673ca77fe26cd5cba38d816bc72d641f500f1f9b25b83e8ce28827fe2da7ad583a8da26ab6af85f834138cf8dae9f69b0cd6ab925f52ddab1754db44d99ce
+  languageName: node
+  linkType: hard
+
+"domexception@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "domexception@npm:1.0.1"
+  dependencies:
+    webidl-conversions: ^4.0.2
+  checksum: f564a9c0915dcb83ceefea49df14aaed106b1468fbe505119e8bcb0b77e242534f3aba861978537c0fc9dc6f35b176d0ffc77b3e342820fb27a8f215e7ae4d52
   languageName: node
   linkType: hard
 
@@ -3097,6 +3150,15 @@ __metadata:
     jest-message-util: ^28.1.3
     jest-util: ^28.1.3
   checksum: 101e0090de300bcafedb7dbfd19223368a2251ce5fe0105bbb6de5720100b89fb6b64290ebfb42febc048324c76d6a4979cdc4b61eb77747857daf7a5de9b03d
+  languageName: node
+  linkType: hard
+
+"fake-indexeddb@npm:^3.1.7":
+  version: 3.1.8
+  resolution: "fake-indexeddb@npm:3.1.8"
+  dependencies:
+    realistic-structured-clone: ^2.0.1
+  checksum: cea9905f5e134952a6471e73c3a69dc79935dc221741a518df7010114a482c900b872c855215e1163e063ce9aab3e8f01a660684cd5c0e8ff11e30bf47892de9
   languageName: node
   linkType: hard
 
@@ -4561,7 +4623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
+"lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -5494,6 +5556,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"realistic-structured-clone@npm:^2.0.1":
+  version: 2.0.4
+  resolution: "realistic-structured-clone@npm:2.0.4"
+  dependencies:
+    core-js: ^3.4
+    domexception: ^1.0.1
+    typeson: ^6.1.0
+    typeson-registry: ^1.0.0-alpha.20
+  checksum: 0174efd3a3046bd084b8f459b2ce718750a1d90099a9e502fd6ec88483d92b4e784143cdbb7e7d1b7daef2d2d2ced6eaebf0f54f0f4a143eef9b03e1c4f13982
+  languageName: node
+  linkType: hard
+
 "redent@npm:^3.0.0":
   version: 3.0.0
   resolution: "redent@npm:3.0.0"
@@ -6323,6 +6397,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tr46@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "tr46@npm:2.1.0"
+  dependencies:
+    punycode: ^2.1.1
+  checksum: ffe6049b9dca3ae329b059aada7f515b0f0064c611b39b51ff6b53897e954650f6f63d9319c6c008d36ead477c7b55e5f64c9dc60588ddc91ff720d64eb710b3
+  languageName: node
+  linkType: hard
+
 "tr46@npm:^3.0.0":
   version: 3.0.0
   resolution: "tr46@npm:3.0.0"
@@ -6702,6 +6785,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typeson-registry@npm:^1.0.0-alpha.20":
+  version: 1.0.0-alpha.39
+  resolution: "typeson-registry@npm:1.0.0-alpha.39"
+  dependencies:
+    base64-arraybuffer-es6: ^0.7.0
+    typeson: ^6.0.0
+    whatwg-url: ^8.4.0
+  checksum: c6b629697acf4652aecfff7be760356d764600afc9beca253278bbfc44fae0fe635b7619201b83e497cdc30645cbce7614d12a04b5726d9b8b505f73e6a3fc2a
+  languageName: node
+  linkType: hard
+
+"typeson@npm:^6.0.0, typeson@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "typeson@npm:6.1.0"
+  checksum: 00a77b03ac8f704acb103307bad9295fe47d6b304c386297f078ec3be63875c0b81e022a4815edb9dc2c7da0a72a431345411d35c755a8510af4a420e9e46cdc
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^1.1.1":
   version: 1.1.1
   resolution: "unique-filename@npm:1.1.1"
@@ -6840,6 +6941,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"webidl-conversions@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "webidl-conversions@npm:4.0.2"
+  checksum: c93d8dfe908a0140a4ae9c0ebc87a33805b416a33ee638a605b551523eec94a9632165e54632f6d57a39c5f948c4bab10e0e066525e9a4b87a79f0d04fbca374
+  languageName: node
+  linkType: hard
+
+"webidl-conversions@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "webidl-conversions@npm:6.1.0"
+  checksum: 1f526507aa491f972a0c1409d07f8444e1d28778dfa269a9971f2e157182f3d496dc33296e4ed45b157fdb3bf535bb90c90bf10c50dcf1dd6caacb2a34cc84fb
+  languageName: node
+  linkType: hard
+
 "webidl-conversions@npm:^7.0.0":
   version: 7.0.0
   resolution: "webidl-conversions@npm:7.0.0"
@@ -6864,6 +6979,17 @@ __metadata:
     tr46: ~0.0.3
     webidl-conversions: ^3.0.0
   checksum: b8daed4ad3356cc4899048a15b2c143a9aed0dfae1f611ebd55073310c7b910f522ad75d727346ad64203d7e6c79ef25eafd465f4d12775ca44b90fa82ed9e2c
+  languageName: node
+  linkType: hard
+
+"whatwg-url@npm:^8.4.0":
+  version: 8.7.0
+  resolution: "whatwg-url@npm:8.7.0"
+  dependencies:
+    lodash: ^4.7.0
+    tr46: ^2.1.0
+    webidl-conversions: ^6.1.0
+  checksum: a87abcc6cefcece5311eb642858c8fdb234e51ec74196bfacf8def2edae1bfbffdf6acb251646ed6301f8cee44262642d8769c707256125a91387e33f405dd1e
   languageName: node
   linkType: hard
 

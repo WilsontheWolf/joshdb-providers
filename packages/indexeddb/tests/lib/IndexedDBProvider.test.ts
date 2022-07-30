@@ -1,10 +1,8 @@
-import type { JoshProvider } from '@joshdb/core';
-import { runProviderTest } from '../../../../tests/runProviderTest';
-import { IndexedDBProvider, IndexedDBProviderError } from '../../src';
+import { runProviderTest } from '@joshdb/provider';
 import 'fake-indexeddb/auto';
+import { IndexedDBProvider } from '../../src';
 
-runProviderTest<typeof IndexedDBProvider, JoshProvider.Options>({
-	providerConstructor: IndexedDBProvider,
-	errorConstructor: IndexedDBProviderError,
-	providerOptions: {}
+runProviderTest<typeof IndexedDBProvider, IndexedDBProvider.Options>({
+  providerConstructor: IndexedDBProvider,
+  providerOptions: {}
 });
